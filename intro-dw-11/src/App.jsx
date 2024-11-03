@@ -21,15 +21,6 @@ function App() {
       <BrowserRouter>
         <Nav />
         <Routes>
-          <Route path="/" element={
-            <LayoutComponent
-              leftColSize={{ xs: 0, sm: 0, md: 4, lg: 6 }}
-              rightColSize={{ xs: 24, sm: 24, md: 24, lg: 18 }}
-              leftContent={<ImagenLogin />}
-              rightContent={<FormLogin />}
-            />
-          } />
-        
           <Route path="*" element={<AppRoutes />} />
         </Routes>
       </BrowserRouter>
